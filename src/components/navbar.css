@@ -1,0 +1,116 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  font-family: "Cinzel", serif;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #1b2430;
+  padding: 20px 80px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+  /* font-family: "Roboto Slab", serif; */
+  font-family: "Cinzel", serif;
+  z-index: 100;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 7rem;
+}
+#navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+}
+#navbar li {
+  list-style: none;
+  padding: 0 20px;
+  position: relative;
+}
+#navbar li a {
+  text-decoration: none;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #fff;
+  /* color: black; */
+  transition: 0.3s ease-in-out;
+  font-size: 1.2rem;
+}
+#navbar li a:hover,
+#navbar li a.active {
+  /* color: #17cf97; */
+  color: #00ffff;
+}
+
+#navbar li a:hover::after,
+#navbar li a.active:after {
+  content: "";
+  width: 30%;
+  height: 2px;
+  /* background: #17cf97; */
+  background: #00ffff;
+  position: absolute;
+  bottom: -4px;
+  left: 20px;
+}
+#mobile {
+  display: none;
+}
+#mobile i {
+  color: #fff;
+  /* color: black; */
+}
+#imagelogo {
+  width: 10rem;
+  height: 10rem;
+}
+.reg {
+  position: relative;
+  left: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+  #navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: fixed;
+    top: 85px;
+    z-index: 100;
+    right: -300px;
+    width: 300px;
+    height: 100vh;
+    background-color: #1b2430;
+    box-shadow: 0 50px 60px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px 0 0 10px;
+    transition: 0.3s ease-in-out;
+  }
+  .button {
+    position: relative;
+    left: 10px;
+  }
+  #imagelogo {
+    position: relative;
+    right: 2rem;
+    width: 10rem;
+    height: 10rem;
+  }
+
+  #navbar.active {
+    right: 0px;
+  }
+  #mobile {
+    display: block;
+  }
+  #navbar li {
+    margin-bottom: 25px;
+  }
+  #mobile i {
+    font-size: 24px;
+    cursor: pointer;
+  }
+}

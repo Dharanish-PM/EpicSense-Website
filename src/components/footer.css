@@ -1,0 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+.firstcon {
+  width: 40%;
+}
+.logoneww {
+  justify-self: end;
+  width: 50%;
+  margin: 0;
+}
+.fontchangee {
+  font-family: "IBM Plex Serif", serif;
+  /* font-family: "Open Sans", sans-serif; */
+  color: white;
+}
+.footbtn {
+  width: 100%;
+  margin-top: 10px;
+}
+@media screen and (max-width: 1000px) {
+  .logoneww {
+    width: 100%;
+    position: relative;
+    right: 1rem;
+    margin: 0;
+  }
+  .middle {
+    font-family: "Montserrat", sans-serif;
+    text-transform: lowercase;
+
+    margin: 3rem 0;
+  }
+}

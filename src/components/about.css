@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+#process {
+  font-family: "Cinzel", serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+#About {
+  padding-top: 2.2rem;
+}
+.reasons {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.es {
+  display: flex;
+  align-items: baseline;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  font-size: 1.4rem;
+}
+.epicsense {
+  position: absolute;
+  height: 4rem;
+  left: 20px;
+}
+.para {
+  margin-top: 2.2rem;
+
+  line-height: 2rem;
+}
+.read-more-text {
+  display: none;
+}
+.read-less {
+  display: inline;
+}
+p,
+li {
+  font-family: "IBM Plex Serif", serif;
+  /* font-family: "Open Sans", sans-serif; */
+}
+@media screen and (max-width: 1000px) {
+  .epicsense {
+    position: absolute;
+    height: 4rem;
+    left: 40px;
+  }
+}

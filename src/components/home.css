@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+#two {
+  margin-top: 6rem;
+}
+body {
+  /* font-family: "Cinzel", serif; */
+}
+.intro {
+  font-size: 38px;
+}
+
+.ll {
+  font-family: "Roboto";
+  color: grey;
+  line-height: 1.6rem;
+}
+.rr:hover {
+  transform: scale(1.2);
+}
+.container {
+  padding: 0;
+}
+@media screen and (max-width: 1000px) {
+  .intro {
+    font-size: 28px;
+  }
+  .container {
+    padding: 0 20px;
+  }
+  .hero-grid {
+    padding-bottom: 0;
+  }
+}

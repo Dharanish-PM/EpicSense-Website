@@ -1,0 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel&display=swap");
+#about {
+  font-family: "Cinzel", serif;
+}
+.services {
+  margin-top: 3rem;
+}
+.fontchange {
+  font-family: "IBM Plex Serif", serif;
+  /* font-family: "Open Sans", sans-serif; */
+  color: grey;
+}
+.second {
+  margin-top: 2rem;
+}
